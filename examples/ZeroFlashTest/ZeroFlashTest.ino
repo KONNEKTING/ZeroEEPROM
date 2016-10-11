@@ -27,7 +27,7 @@ void setup() {
     
     // set "valid" to true, so the next time we know that we
     // have valid data inside
-    for(int i=0;i<1024;i++){
+    for(int i=0;i<EEPROM_EMULATION_SIZE;i++){
       ZeroEEPROM.write(i, 0xC0);  
     }
     
