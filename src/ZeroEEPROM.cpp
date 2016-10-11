@@ -19,7 +19,7 @@
 */
 
 #include "Arduino.h"
-#include "Samd21Eeprom.h"
+#include "ZeroEEPROM.h"
 
 FlashStorage(my_flash_ptr, EEPROM_EMULATION); 
 
