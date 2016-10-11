@@ -40,7 +40,7 @@ void setup() {
     SerialUSB.print(ende-start);
     SerialUSB.println("us");
 
-    for(int i=0;i<1024;i++){
+    for(int i=0;i<EEPROM_EMULATION_SIZE;i++){
       
       SerialUSB.print("after write: addr=");
       SerialUSB.print(i);
@@ -55,7 +55,7 @@ void setup() {
 
     SerialUSB.println("EEPROM already valid.");
     
-    for(int i=0;i<1024;i++){
+    for(int i=0;i<EEPROM_EMULATION_SIZE;i++){
       
       SerialUSB.print("addr=");
       SerialUSB.print(i);
